@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Video Description Generator</title>
+  <title>American Sign Language</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -43,14 +43,31 @@
 
           <div class="col-lg-12 portfolio-info">
             <br>
-            <h2 style="color:#12d640">Video Description Generator</h2>
+            <h2 style="color:#12d640"><strong>American Sign Language (ASL)</strong></h2>
 
             <ul>
-              <li><strong>Tech Stack</strong>: Tensorflow, NLTK, Keras, Python, Opencv</li>
+              <li><strong>Tech Stack</strong>: Scikit learn, Numpy, Pandas, Python, Google colab</li>
+              <li><strong>Github URL</strong>: <a href="https://github.com/ravellaabhinav/ASL" target="_blank">Project Link</a></li>
             </ul>
-
             <p>
-              Project aims at generating a description of a given video. The steps include Object detection in video frames using Convolutional Neural Network followed by generating text for each frame using a recurrent neural network and thereby generating tags with the help of natural language processing.            
+              <h6 style="color:#12d640">About the dataset</h6>
+              About
+The data set is a collection of images of alphabets from the American Sign Language, separated in 29 folders which represent the various classes.
+The training data set contains 87,000 images which are 200x200 pixels. There are 29 classes, of which 26 are for the letters A-Z and 3 classes for SPACE, DELETE and NOTHING.
+These 3 classes are very helpful in real-time applications, and classification.
+The test data set contains a mere 29 images, to encourage the use of real-world test images.<br><br>
+<h4 style="color:#FF00FF">Project Summary</h4>
+<h5 style="color:#12d640">Goal:</h5> Build a system that can correctly identify American Sign Language signs that corresponds to the hand gestures
+<br><br>
+<h5 style="color:#12d640">Applications:</h5> Our proposed system will help the deaf and hard-of-hearing communicate better with members of the community. 
+For example, there have been incidents where those who are deaf have had trouble communicating with first responders when in need. 
+Although responders may receive training on the basics of ASL, it is unrealistic to expect everyone to become fully fluent in sign language. 
+Down the line, advancements like these in computer recognition could aid a first responder in understanding and helping those that are unable to communicate through speech.
+<br><br>
+Another application is to enable the deaf and hard-of-hearing equal access to video consultations, whether in a professional context or while trying to communicate with their healthcare providers via telehealth. Instead of using basic chat, these advancements would allow the hearing-impaired access to effective video communication.
+<br><br>
+<h5 style="color:#12d640">Performance:</h5> The proposed model for the still images is able to identify the static signs with an accuracy of 94.33%. 
+Based on our analysis of the dynamic signs, we realized the need to identify if the sign is a one-handed or two-handed sign first, and then identify the sign itself. The final model we propose for the dynamic signs is capable of identifying the one-handed signs with an accuracy of 88.9% and the two-handed signs with an accuracy of 79.0%.
             </p>
           </div>
 

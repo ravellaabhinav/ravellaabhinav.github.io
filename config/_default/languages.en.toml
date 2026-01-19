@@ -1,0 +1,26 @@
+languageCode = "en"
+languageName = "English"
+languageDirection = "ltr"
+weight = 1
+
+title = "Online Home of Abhinav"
+copyright = "© 2025 Abhinav Ravella"
+# copyright = "Copy, _right?_ :thinking_face:"
+
+[params]
+  dateFormat = "2 January 2006"
+
+  # mainSections = ["about", "projects", "experience"]
+  description = "Software Engineer & MS CS @ University at Buffalo, building reliable systems, data products, and AI tooling."
+
+[params.author]
+   name = "Abhinav Ravella"
+   image = "img/abhinav.jpeg"
+   headline = "Software Engineer · MS CS @ University at Buffalo"
+   bio = "Ever in awe of the wonders that 0s and 1s could create!"
+   links = [
+     { github = "https://github.com/ravellaabhinav" },
+     { linkedin = "https://linkedin.com/in/ravellaabhinav" },
+     { email = "mailto:ravellaabhinav31@gmail.com" },
+     { medium = "https://medium.com/@ravellaabhinav31" },
+   ]

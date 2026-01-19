@@ -1,0 +1,103 @@
+/* =========================================================
+   Abhinav Portfolio — clean overrides for Congo
+   Keep this file small, readable, and conflict-free.
+   ========================================================= */
+
+/* -------------------------
+   Homepage (profile layout)
+   ------------------------- */
+
+/* Use more screen width on desktops (gives a "zoomed" feel) */
+@media (min-width: 1024px) {
+  main .author {
+    max-width: 80rem !important;
+  }
+}
+
+/* Name bigger (Rajkumar-style sizing) */
+main .author h1 {
+  font-size: 4.8rem !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.03em;
+}
+
+/* Headline slightly larger */
+main .author .author-headline {
+  font-size: 1.6rem !important;
+  line-height: 1.35 !important;
+  opacity: 0.9;
+}
+
+/* Avatar bigger + proper crop */
+main .author .author-image {
+  width: 190px !important;
+  height: 190px !important;
+}
+main .author .author-image img {
+  width: 190px !important;
+  height: 190px !important;
+  border-radius: 9999px !important;
+  object-fit: cover !important;
+  object-position: center 10% !important; /* tweak 6–14% if needed */
+}
+
+
+/* -------------------------
+   Content typography
+   ------------------------- */
+
+/* Justify paragraphs on content pages (About, posts, etc.) */
+main .prose p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Improves justified text readability */
+main .prose {
+  hyphens: auto;
+}
+
+
+/* -------------------------
+   Experience page (no card look)
+   ------------------------- */
+
+/* Remove any "card" styling completely */
+.experience-card {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Spacing between roles */
+.experience-card + .experience-card {
+  margin-top: 4rem;
+}
+
+/* Ensure experience content uses full width */
+.experience-card .prose {
+  max-width: 100% !important;
+}
+
+/* Increase spacing between role line and skill pills */
+.experience-card .exp-meta {
+  margin-top: 0.45rem;
+}
+.experience-card .exp-tags {
+  margin-top: 0.9rem;
+}
+
+/* Clean bullet styling */
+.experience-card .prose ul {
+  list-style: disc;
+  margin-top: 0.9rem;
+  padding-left: 1.4rem;
+}
+.experience-card .prose li {
+  display: list-item;
+  margin: 0.55rem 0;
+  line-height: 1.65;
+}

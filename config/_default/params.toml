@@ -1,0 +1,96 @@
+# ---------------------------------------------------------
+#  Theme Parameters for Hugo Congo v2
+#  Abhinav Ravella — Personal Portfolio
+# ---------------------------------------------------------
+
+# ----- Theme Style -----
+colorScheme = "sapphire"            # congo, avocado, cherry, fire, ocean, sapphire, slate
+defaultAppearance = "dark"          # dark mode by default
+autoSwitchAppearance = true
+defaultThemeColor = "#ffffff"       # for meta-theme-color
+
+enableSearch = true
+enableCodeCopy = true
+enableImageLazyLoading = true
+enableImageWebp = true
+fingerprintAlgorithm = "sha256"
+
+# ----- Header -----
+[header]
+  layout = "hybrid"                 # clean nav with right-aligned menu
+  showTitle = true                  # shows "Online Home of Abhinav"
+  # Optional future logo:
+  # logo = "img/logo-light.png"
+  # logoDark = "img/logo-dark.png"
+
+# ----- Footer -----
+[footer]
+  showCopyright = true
+  showThemeAttribution = false      # remove “Powered by Congo”
+  showAppearanceSwitcher = true     # toggle dark/light
+  showScrollToTop = true
+
+# ----- Homepage -----
+[homepage]
+  layout = "profile"                # this uses your author block—recommended
+  showRecent = false                # show recent blog posts
+  recentLimit = 5
+
+# ----- Article (Posts, Projects, Experience Notes) -----
+[article]
+  showDate = true
+  showDateUpdated = true
+  showAuthor = true
+  showBreadcrumbs = true
+  showDraftLabel = true
+  showEdit = false
+  editAppendPath = true
+  showHeadingAnchors = true
+  showPagination = true
+  invertPagination = false
+  showReadingTime = true
+  showTableOfContents = true
+  showTaxonomies = true             # IMPORTANT: shows categories/tags on posts
+  showWordCount = false
+  showComments = false
+  # sharingLinks = ["linkedin", "reddit", "email"]
+
+# ----- List Pages (Blog, Projects, Categories, Tags) -----
+[list]
+  showBreadcrumbs = true
+  showSummary = true                # better UX in blog/project lists
+  showTableOfContents = false
+  showTaxonomies = false
+  groupByYear = true
+  paginationWidth = 1
+
+# ----- Sitemap -----
+[sitemap]
+  excludedKinds = ["taxonomy", "term"] # keeps sitemap cleaner
+
+# ----- Taxonomy display options -----
+[taxonomy]
+  showTermCount = true
+
+# ----- Analytics (optional future setup) -----
+[fathomAnalytics]
+  # site = ""
+
+[plausibleAnalytics]
+  # domain = ""
+  # event = ""
+  # script = ""
+
+#[umamiAnalytics]
+#  site = ""
+#  region = "us"
+
+# ----- Site Verification (Search Console etc.) -----
+[verification]
+  # google  = ""
+  # bing    = ""
+  # yandex  = ""
+  # pinterest = ""
+
+[assets]
+  customCSS = ["css/custom.css"]
